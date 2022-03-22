@@ -247,7 +247,36 @@
             <button type="button" class="btn btn-warning  btn-info btn-lg" id="checkoutButton1" data-toggle="modal" data-target="#myModal">CHECKOUT 1-ADDRESS DELIVERY</button>
             <button type="button" class="btn btn-warning  btn-info btn-lg" id="checkoutButton2" data-toggle="modal" data-target="#myModal2">CHECKOUT 2-SELF PICK-UP</button>
         </div>
-        
+
+         <!-- Modal -->
+         <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">ENTER YOUR DELIVERY DETAILS</h4>
+                  </div>
+                  <div class="modal-body">
+                        <div class="totalsItem totals-item-total">
+                          <label>Grand Total Including Ksh 150 delivery fee.</label>
+                          <div class="totalsValue1" id="cartTotal1">00.0</div>
+                        </div>
+                        <p>Enter the details to complete your order:</p>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="ID Number">
+                            <input type="text" placeholder="Mobile No.">
+                            <input type="text" placeholder="Delivery Address">
+                  </div>
+                  <div class="modal-footer">
+                    <button onclick="checkoutAlert()">SUBMIT</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                  </div>
+            </div>
+          </div>
+        </div>
+
 
 <!--Contact Section-->    
 <div class="container-fluid p-0">
